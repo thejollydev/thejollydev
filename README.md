@@ -89,12 +89,12 @@ Here are the primary technologies I work with, categorized by my areas of focus.
 </details>
 
 <details>
-  <summary><strong>☁️ DevOps / Cloud Project: [Name of Your DevOps Project]</strong></summary>
+  <summary><strong>☁️ DevOps / Cloud Project: The Bunker Lab</strong></summary>
   
-  * **What it is:** A (e.g., CI/CD pipeline, server-automation script, containerized application).
-  * **How it works:** Uses **Docker** and **Kubernetes** to deploy a microservice on **Google Cloud Platform (GCP)**. The pipeline is managed with [GitHub Actions/Jenkins].
-  * **Key takeaway:** This project shows my experience in containerization, infrastructure as code (IaC), and building automated, repeatable deployment processes.
-  * **[Link to Repository &rarr;](https://github.com/thejollydev/your-repo)**
+  * **What it is:** A production-grade DevOps homelab designed to mimic enterprise architecture. It decouples compute, storage, and networking to create a resilient, hybrid-cloud platform for hosting portfolio projects and AI workloads.
+  * **How it works:** Built on **Proxmox VE** with **ZFS** storage. It features a **Zero-Trust** network via **Tailscale**, **Docker** for service orchestration, and an automated **Disaster Recovery** pipeline using **Terraform** and **Rclone** to sync encrypted data to **Google Cloud**.
+  * **Key takeaway:** Demonstrates mastery of **Hybrid Cloud Architecture**, **Infrastructure as Code (IaC)**, **Virtualization**, and **Secure Networking** principles in a production-like environment.
+  * **[Link to Repository &rarr;](https://github.com/thejollydev/bunker-lab)**
 </details>
 
 ---
