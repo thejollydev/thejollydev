@@ -21,7 +21,7 @@ I'm a software developer transitioning from operations management to development
 
 ## 📊 GitHub Activity
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thejollydev&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=thejollydev&theme=dark&hide_border=true)](https://git.io/streak-stats)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thejollydev&layout=compact&theme=dark&hide_border=true&langs_count=6)
 
