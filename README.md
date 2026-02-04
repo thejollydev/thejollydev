@@ -19,6 +19,12 @@ I'm a software developer transitioning from operations management to development
 **Cloud:** Google Cloud Platform, Cloud Run, Cloud Storage  
 **Tools:** Git, GitHub Actions, Prometheus, Grafana
 
+## 📊 GitHub Activity
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thejollydev&show_icons=true&theme=dark&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thejollydev&layout=compact&theme=dark&hide_border=true)
+
 ## 📚 Continuous Learning
 
 - 🎓 BS Computer Science (University of the People, Expected 2026)
