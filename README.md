@@ -103,4 +103,3 @@ GNU Stow-managed dotfiles for a fully reproducible dev environment — zsh, star
 [![Email](https://img.shields.io/badge/Email-joseph@soper.dev-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:joseph@soper.dev)
 [![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=gitlab&logoColor=white)](https://gitlab.com/thejollydev)
 
-*Remote only · Petoskey, MI*
