@@ -1,0 +1,16 @@
+
+# AIW-MANAGED-GRAPHIFY-IGNORE
+.git/
+.obsidian/
+node_modules/
+.venv/
+venv/
+__pycache__/
+dist/
+build/
+coverage/
+.env
+.env.*
+*.pem
+*.key
+secrets/
