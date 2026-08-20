@@ -2,3 +2,9 @@
 # AIW-MANAGED-AGENT-FILES — canonical copy lives in the vault
 AGENTS.md
 CLAUDE.md
+
+# AIW-MANAGED-AGENT-FILES — canonical copy lives in the private vault
+/AGENTS.md
+/CLAUDE.md
+/.claudeignore
+/.graphifyignore
