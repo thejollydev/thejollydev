@@ -1,6 +1,0 @@
-
-# AIW-MANAGED-IGNORE
-# AI Workspace derived data / prompt-cache churn
-.graphify/
-graphify-out/
-*.graphify.json
