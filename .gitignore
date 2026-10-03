@@ -1,8 +1,3 @@
-# Agent instruction files ARE tracked (ADR-0011): a repository's agent
-# instructions live in the repository, not in the vault. Keeping them ignored
-# left them on one disk only — absent from clones, from the mirrors, and from
-# any remote or cloud agent.
-
 /.claudeignore
 /.graphifyignore
 
