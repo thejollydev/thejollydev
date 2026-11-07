@@ -1,105 +1,55 @@
-# Hi, I'm Joseph Soper
+# Joseph Soper
 
-![Infrastructure Engineer](https://img.shields.io/badge/Infrastructure_Engineer-0a0a0a?style=flat)
-![DevOps](https://img.shields.io/badge/DevOps-0a0a0a?style=flat)
-![Linux Systems](https://img.shields.io/badge/Linux_Systems-0a0a0a?style=flat)
-![Open to Work](https://img.shields.io/badge/Open_to_Work-Remote_Only-2ea44f?style=flat)
+**Software, Solutions and Support Engineer · Agentic AI and AI implementation · Python, Google Cloud, Linux**
 
-I build and operate production infrastructure. 20+ years on Linux daily. I recently designed and deployed **BezaForge** — a production private cloud built on Proxmox, Docker, 5-VLAN network segmentation, full observability stack, and GPU-accelerated LLM inference. Everything is automated, documented, and version-controlled.
+I've spent my life building hardware and software, with more than 20 years as a hobbyist developer, and the last few years going deep on AI: agentic systems, context engineering and AI implementation. I'm looking for a remote, full-time role in software, AI, cloud or DevOps engineering, in solutions or implementation engineering, or in support engineering at a company that builds for developers.
 
----
+I learned my first programming language 26 years ago and never stopped: hardware builds, more than 20 years of Linux, servers, networks, and now a private cloud on my own hardware. I run [BezaCore Labs](https://github.com/BezaCore-Labs), the studio where I build the projects below.
+
+[soper.dev](https://soper.dev) · [LinkedIn](https://www.linkedin.com/in/joseph-soper-dev/) · [joseph@soper.dev](mailto:joseph@soper.dev)
 
 ## Projects
 
-### [BezaForge Infrastructure Platform](https://github.com/thejollydev/bezaforge-infrastructure)
-Production private cloud. Proxmox VE + Docker + 5-VLAN Omada SDN + Prometheus/Grafana/Loki + AMD RX 7900 XT GPU passthrough + Ollama LLM inference. 10+ services deployed and running.
+### [Never4gA](https://github.com/BezaCore-Labs/never4ga)
 
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
+Open-source context and memory for AI coding agents, in Python, on [PyPI](https://pypi.org/project/never4ga/) under Apache-2.0. Agents start each session knowing nothing about a project, and memory tools usually answer that by asking a model what's relevant. Never4gA does that work with logic: it resolves the repository to its project, pulls that project's documents by type and metadata, runs BM25 full-text search, follows document links, fuses the results with reciprocal rank fusion, and assembles a context pack held to a strict budget, where every item says why it's there. A command line, a REST API and an MCP server share one core. I built vector search into it too, measured it against full-text search, and took it out: [why I removed the vector search lane](https://soper.dev/removing-the-vector-lane/).
+
+*Python · FastAPI · SQLite · MCP*
+
+### [BezaForge](https://github.com/thejollydev/bezaforge-infrastructure)
+
+My studio's private cloud, on my own hardware and managed entirely as code. Terraform declares the Proxmox virtual machines and Ansible configures every host and service, so the whole environment can be rebuilt from the repository. Services run in Docker behind Traefik over segmented VLANs, with WireGuard for remote access. It hosts the studio's Git, project tracking and ERP, and a local AI stack with Ollama on a passed-through GPU and Langfuse tracing LLM calls. Prometheus, Grafana and Loki watch all of it, and encrypted backups go off-site every day.
+
+*Terraform · Ansible · Docker · Proxmox · Prometheus · Grafana*
+
+### [Petoskey Church of Christ](https://petoskeychurchofchrist.com)
+
+The WordPress publishing platform a small church runs on, built pro bono and supported in production. The pastor writes the week once, and it becomes the website, the Sunday email and a print bulletin that sizes its own type to fit the page. Around that sit two-way Google Calendar sync and sermon videos through the YouTube Data API. Custom PHP and JavaScript, developed in local Docker, verified on staging and deployed by script. The repository is private.
+
+*WordPress · PHP · JavaScript · MySQL · Google APIs*
+
+### Intelligrace
+
+Operations software for small churches and nonprofits, in development. One modular Django application with Next.js and Expo clients, where every record belongs to an organization, enforced by PostgreSQL row-level security, with field-level encryption on sensitive records. Its AI layer can change providers, stays off by default for private records, and requires approval on anything AI wrote. The Google Cloud foundation is built in Terraform. The repository is private; I'm glad to walk through it.
+
+*Django · Next.js · PostgreSQL · Google Cloud · Terraform*
 
 ### [ansible-arch](https://github.com/thejollydev/ansible-arch)
-Idempotent Ansible playbook for full Arch Linux workstation provisioning — packages, AUR, dotfiles, services, system config. Single playbook targets multiple machines via host variable feature flags.
 
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white)
-![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white)
+One idempotent Ansible playbook that provisions my Arch Linux workstations end to end: packages, AUR, dotfiles, services and system configuration, with per-host feature flags.
 
-### [dotfiles](https://github.com/thejollydev/dotfiles)
-GNU Stow-managed dotfiles for a fully reproducible dev environment — zsh, starship, Neovim, kitty, zellij, tmux.
+*Ansible · Arch Linux*
 
-![Neovim](https://img.shields.io/badge/Neovim-57A143?style=flat&logo=neovim&logoColor=white)
-![Zsh](https://img.shields.io/badge/Zsh-F15A24?style=flat&logo=gnubash&logoColor=white)
-![GNU Stow](https://img.shields.io/badge/GNU_Stow-A42E2B?style=flat&logo=gnu&logoColor=white)
+## What I do with AI
 
-### In Development
+I use local and frontier models and agentic AI daily, and I build the systems around them: agentic teams for real problems, MCP servers, agent skills, persistent agent memory, and a multi-model LangGraph workflow with human approval. I run local inference with Ollama on my own GPU, trace LLM calls, tokens and cost in Langfuse, and measure retrieval with Recall@k and MRR. I also know where AI doesn't belong, and measure before I decide.
 
-| Project | Stack | Description |
-|---------|-------|-------------|
-| forge-cortex | FastAPI · Neo4j · Qdrant · LiteLLM | Self-hosted AI assistant with memory and RAG |
-| BezaChain | FastAPI · Celery · Redis · PostgreSQL · Ollama | Async AI orchestration API |
-| Career Catalyst | FastAPI · Playwright · spaCy · React | Job search automation platform |
-| Homelab Pulse | React · TypeScript · WebSockets · Prometheus | Real-time infrastructure dashboard |
+## Background
 
----
+Nine years in consultative sales taught me to find out what a customer actually needs. Support at AppleCare and Tier 2 at Intuit taught me to work from logs to root causes and take customers through database migrations and server installations.
 
-## Tech Stack
+- Google Cloud Associate Cloud Engineer
+- IBM Back-End Development Professional Certificate
+- B.S. in Computer Science, University of the People, expected December 2027
 
-**Infrastructure**
-
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white)
-
-**Networking & Observability**
-
-![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat&logo=traefikproxy&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
-![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
-
-**Development**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-
-**Cloud & Certifications**
-
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white)
-![IBM](https://img.shields.io/badge/IBM_Back--End_Dev_✅-052FAD?style=flat&logo=ibm&logoColor=white)
-![Python Institute](https://img.shields.io/badge/PCEP_✅-3776AB?style=flat&logo=python&logoColor=white)
-
----
-
-## Currently
-
-- BezaForge Phase 2 — Ansible automation, CI/CD pipelines
-- Google Cloud Professional Cloud Architect certification (in progress)
-- BS Computer Science — University of the People (expected 2026)
-- **Open to remote roles:** Infrastructure Engineer · DevOps · Platform Engineer · Technical Support
-
----
-
-## GitHub Stats
-
-![Joseph's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thejollydev&show_icons=true&theme=dark&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thejollydev&layout=compact&theme=dark&hide_border=true)
-
----
-
-## Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joseph-soper-dev/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-soper.dev-0a0a0a?style=flat)](https://soper.dev)
-[![Email](https://img.shields.io/badge/Email-joseph@soper.dev-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:joseph@soper.dev)
-[![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=gitlab&logoColor=white)](https://gitlab.com/thejollydev)
-
+**Stack:** Python, FastAPI, Django, SQL, PostgreSQL, SQLite, Bash, Git, GitHub Actions · Linux, Docker, Terraform, Ansible, Proxmox, Traefik, Prometheus, Grafana · Google Cloud, Cloud Run · WordPress, PHP, JavaScript, Next.js · MCP, LangGraph, Ollama, Langfuse
